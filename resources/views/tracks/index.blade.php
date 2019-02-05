@@ -4,6 +4,7 @@
 
 @section('main')
 
+<a href ="/tracks/new" class = "btn btn-success mb-2 mt-3 ml-1"> Add a Track </a>
 
   <table class="table">
     <tr>
