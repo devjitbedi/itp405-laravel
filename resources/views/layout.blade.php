@@ -9,6 +9,34 @@
 <body>
 
 <div class = "container-fluid">
+	
+	<ul class="nav">
+      @if (Auth::check())
+        <li class="nav-item">
+          <a href="/profile" class="nav-link">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a href="/genres" class="nav-link">Genres</a>
+        </li>
+        <li class="nav-item">
+          <a href="/tracks" class="nav-link">Tracks</a>
+        </li>
+        <li class="nav-item">
+          <a href="/playlists" class="nav-link">Playlists</a>
+        </li>
+        <li class="nav-item">
+          <a href="/logout" class="nav-link">Logout</a>
+        </li>
+      @else
+        <li class="nav-item">
+          <a href="/login" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="/signup" class="nav-link">Sign Up</a>
+        </li>
+      @endif
+    </ul>
+
 
 	@yield('main')
 

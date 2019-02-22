@@ -24,3 +24,26 @@ Route::get('/playlists', 'PlaylistsController@index');
 Route::get('/playlists/new', 'PlaylistsController@create');
 Route::get('/playlists/{id}', 'PlaylistsController@index');
 Route::post('/playlists/', 'PlaylistsController@store');
+
+Route::get('/signup', 'SignUpController@index');
+Route::post('/signup', 'SignUpController@signup');
+
+Route::get('/login', 'LoginController@index');
+Route::post('/login', 'LoginController@login');
+Route::get('/logout', 'LoginController@logout');
+
+Route::get('/maintenance', 'MaintenanceController@index');
+
+ Route::middleware(['authenticated'])->group(function() {
+  Route::get('/profile', 'AdminController@index');
+  Route::get('/settings', 'SettingsController@index');
+  Route::post('/settings', 'SettingsController@store');
+  
+ });
+
+  Route::middleware(['maintenance'])->group(function() {
+  Route::get('/genres', 'GenresController@index');
+  Route::get('/tracks', 'TracksController@index');
+  Route::get('/playlists', 'PlaylistsController@index');
+  
+ });
