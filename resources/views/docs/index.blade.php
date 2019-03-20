@@ -8,9 +8,9 @@
 <h2> Feel free to say anything you feel about music... </h2>
 
 <div contenteditable="true" id= "edit">
-  This text can be edited by the user.
+  Let's just talk about music and love each other.
 </div>
 
-<script src="docs.js"></script>
+<script src="/js/docs.js"></script>
 
 @endsection
