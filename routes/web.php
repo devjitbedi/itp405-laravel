@@ -25,6 +25,8 @@ Route::get('/playlists/new', 'PlaylistsController@create');
 Route::get('/playlists/{id}', 'PlaylistsController@index');
 Route::post('/playlists/', 'PlaylistsController@store');
 
+Route::get('/docs', 'DocsController@index');
+
 Route::get('/signup', 'SignUpController@index');
 Route::post('/signup', 'SignUpController@signup');
 

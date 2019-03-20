@@ -20,6 +20,8 @@
 
   <a href = "/playlists" class = "btn ml-3 btn-primary"> Playlists </a>
 
+  <a href = "/docs" class = "btn ml-3 btn-secondary"> Docs </a>
+
 </div>
 
 </div>

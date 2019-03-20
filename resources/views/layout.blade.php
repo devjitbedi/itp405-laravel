@@ -25,6 +25,9 @@
           <a href="/playlists" class="nav-link">Playlists</a>
         </li>
         <li class="nav-item">
+          <a href="/docs" class="nav-link">Docs</a>
+        </li>
+        <li class="nav-item">
           <a href="/logout" class="nav-link">Logout</a>
         </li>
       @else
